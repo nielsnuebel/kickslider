@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>mod_kickslider</name>
+	<version>0.0.1</version>
+	<creationDate>08 Februar 2018</creationDate>
+	<author>Niels Nübel</author>
+	<authorEmail>info@niels-nuebel.de</authorEmail>
+	<authorUrl>http://www.niels-nuebel.de</authorUrl>
+	<copyright>Copyright © 2013 - 2018 niels-nuebel.de</copyright>
+	<description>MOD_KICKSLIDER_XML_DESCRIPTION</description>
+
+	<media destination="mod_kickslider" folder="media">
+		<folder>css</folder>
+	</media>
+
+	<files>
+		<filename module="mod_kickslider">mod_kickslider.php</filename>
+		<filename>mod_kickslider.xml</filename>
+		<filename>helper.php</filename>
+		<filename>slides.xml</filename>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="duration" type="text" default="3000"
+					label="MOD_KICKSLIDER_FIELD_DURATION_LABEL"
+					description="MOD_KICKSLIDER_FIELD_DURATION_DESC" />
+				<field name="minheight" type="text" default=""
+					label="MOD_KICKSLIDER_FIELD_MINHEIGHT_LABEL"
+					description="MOD_KICKSLIDER_FIELD_MINHEIGHT_DESC" />
+				<field name="slides" type="subform" formsource="modules/mod_kickslider/slides.xml" min="0" max="99" multiple="true" layout="joomla.form.field.subform.repeatable-table" groupByFieldset="true" label="MOD_KICKSLIDER_FIELD_SLIDES_LABEL" description="MOD_KICKSLIDER_FIELD_SLIDES_DESC" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC"
+				>
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static"
+				>
+					<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

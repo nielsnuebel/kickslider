@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="slide" label="MOD_KICKSLIDER_FIELDSET_SLIDE_LABEL">
+		<field name="image" type="media"
+			   label="MOD_KICKSLIDER_FIELD_IMAGE_LABEL"
+			   description="MOD_KICKSLIDER_FIELD_IMAGE_DESC" />
+		<field name="alt" type="text"
+			   default=""
+			   label="MOD_KICKSLIDER_FIELD_ALT_LABEL"
+			   description="MOD_KICKSLIDER_FIELD_ALT_DESC"
+		/>
+		<field name="title" type="text"
+			   default=""
+			   label="MOD_KICKSLIDER_FIELD_TITLE_LABEL"
+			   description="MOD_KICKSLIDER_FIELD_TITLE_DESC"
+		/>
+		<field name="headline" type="text"
+			   default=""
+			   label="MOD_KICKSLIDER_FIELD_HEADLINE_LABEL"
+			   description="MOD_KICKSLIDER_FIELD_HEADLINE_DESC"
+		/>
+		<field name="subline" type="text"
+			   default=""
+			   label="MOD_KICKSLIDER_FIELD_SUBLINE_LABEL"
+			   description="MOD_KICKSLIDER_FIELD_SUBLINE_DESC"
+		/>
+	</fieldset>
+</form>

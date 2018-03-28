@@ -68,6 +68,7 @@ $root = 'kickslider';
             setTimeout(showSlides, <?= $duration ?>);
         }
     }
-
+window.onload = function() {
     initSlider<?= $module->id ?>()
+};
 </script>

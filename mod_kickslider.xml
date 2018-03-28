@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="3.1" client="site" method="upgrade">
 	<name>mod_kickslider</name>
-	<version>0.0.2</version>
+	<version>0.0.3</version>
 	<creationDate>08 Februar 2018</creationDate>
 	<author>Niels Nübel</author>
 	<authorEmail>info@niels-nuebel.de</authorEmail>

@@ -56,12 +56,10 @@ class ModKickSliderHelper
 					$attr['style'] = 'min-height: ' . $minheight . 'px;';
 				}
 
-				$slide->position = ' background-position: 50% 50%';
-				$postion = $params->get('position', '50% 50%');
 
-				if ($postion && $postion != "")
+				if ($slide->position && $slide->position != "")
 				{
-					$slide->position = ' background-position: ' . $postion . ';';
+					$slide->position = ' background-position: ' . $slide->position . ';';
 				}
 
 				$attr['class'] = 'kickslider__image';

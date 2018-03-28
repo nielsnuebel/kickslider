@@ -48,10 +48,20 @@ class ModKickSliderHelper
 					$attr['title'] = $slide->title;
 				}
 
+				$attr['style'] = '';
 				$minheight = $params->get('minheight', false);
-				if($minheight && $minheight > 200)
+
+				if ($minheight && $minheight > 200)
 				{
-					$attr['style'] = 'min-height: ' . $minheight . 'px';
+					$attr['style'] = 'min-height: ' . $minheight . 'px;';
+				}
+
+				$slide->position = ' background-position: 50% 50%';
+				$postion = $params->get('position', '50% 50%');
+
+				if ($postion && $postion != "")
+				{
+					$slide->position = ' background-position: ' . $postion . ';';
 				}
 
 				$attr['class'] = 'kickslider__image';

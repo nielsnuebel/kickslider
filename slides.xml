@@ -4,6 +4,11 @@
 		<field name="image" type="media"
 			   label="MOD_KICKSLIDER_FIELD_IMAGE_LABEL"
 			   description="MOD_KICKSLIDER_FIELD_IMAGE_DESC" />
+		<field name="position" type="text"
+			   default="50% 50%"
+			   label="MOD_KICKSLIDER_FIELD_POSITION_LABEL"
+			   description="MOD_KICKSLIDER_FIELD_POSITION_DESC"
+		/>
 		<field name="alt" type="text"
 			   default=""
 			   label="MOD_KICKSLIDER_FIELD_ALT_LABEL"

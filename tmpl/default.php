@@ -17,7 +17,7 @@ $root = 'kickslider';
     <ul class="kickslider">
 <?php foreach ($slides as $slide): ?>
         <li class="kickslider__item">
-            <div class="kickslider__background" style="background-image: url(<?= $slide->image ?>)"></div>
+            <div class="kickslider__background" style="background-image: url(<?= $slide->image ?>); <?= $slide->position ?>"></div>
             <?= JHtml::_('image', $slide->image, htmlspecialchars($slide->alt, ENT_COMPAT, 'UTF-8'), $slide->attr) ?>
             <div class="kickslider__item_content">
                 <div>

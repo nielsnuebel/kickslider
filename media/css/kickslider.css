@@ -8,7 +8,7 @@
 }
 
 .kickslider__item {
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
   bottom: 0;
@@ -16,9 +16,24 @@
   opacity: 0;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+  display: none;
 }
 
-.kickslider__item.active {
+.kickslider__item:first-child {
+  display: block;
+  opacity: 1;
+}
+
+.kickslider.ready .kickslider__item {
+  display: block;
+  position: absolute;
+}
+
+.kickslider.ready .kickslider__item:first-child {
+  opacity: 0;
+}
+
+.kickslider.ready .kickslider__item.active {
   opacity: 1;
   z-index: 10;
 }
@@ -104,5 +119,3 @@
     font-size: 55px;
   }
 }
-
-
